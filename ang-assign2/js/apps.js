@@ -11,16 +11,9 @@
         var sList = this;
 
         sList.items = ShoppingListCheckOffService.toBuyList;
-        sList.bempty = true;
 
         sList.boughtItem = function (itemIndex) {
           ShoppingListCheckOffService.boughtItem(itemIndex);
-            if (sList.items.length == 0 ) {
-              sList.empty = true;
-            };
-            if (sList.items.length < 6 ) {
-              sList.bempty = false;
-            };
         };
     };
 
