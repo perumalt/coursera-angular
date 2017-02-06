@@ -1,0 +1,19 @@
+<!-- <div class="loader"> -->
+<div>
+  <ol>
+    <li ng-repeat="item in list.items" type="none">
+    
+	    <div class="row">
+
+		      <div class="col-md-1">{{item.short_name }}</div>
+		      <div class="col-md-3">{{item.name }}</div>
+		      <div class="col-md-6">{{item.description }}</div>
+		      <div class="col-md-2"><button ng-click="list.onRemove({index: $index});">Don't want this one!</button></div>
+
+	     </div>
+    
+    </li>
+  </ol>
+
+  <div class="error" ng-hide="list.items.length > 0">Nothing Found</div>
+</div>
